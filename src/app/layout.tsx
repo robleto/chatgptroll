@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "ChatGPTroll · a pestering oracle of the mossy bridge",
@@ -40,6 +41,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics />
         <div id="root">{children}</div>
       </body>
     </html>
